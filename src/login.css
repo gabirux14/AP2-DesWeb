@@ -1,0 +1,137 @@
+* {
+  font-family: "Sans-Serif";
+}
+
+body {
+  margin: 0px;
+  background-color: #cecece;
+  background-image: url('../botafogo.png');
+  background-position: 5ch;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 98vw;
+    height: 100%;
+    align-content: normal;
+}
+
+
+.login{
+  margin-top: 42vh;
+  width: 20%;
+  height: 20vh;
+  border-radius: 10px;
+  box-shadow:
+  inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+  0 0 0 2px white;
+  background: #87CEFA;
+  padding: 15px;
+}
+
+.login h2{
+  font-weight: 700;
+}
+
+.login p{
+  font-weight: 700;
+}
+
+.div-logo{
+  float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+  margin: 100px auto;
+  width: 500px;
+  height: 600px;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header{
+  text-align: center;
+}
+
+#LoginID{
+  margin-top: 15px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.input-form{
+  display: block;
+  width: 100%;
+  min-width: 210px;
+  margin-right: 70px;
+  margin-left: -10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+
+.input-form:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+
+#LoginID span{
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .logo{
+    width: 400px;
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo{
+    width: 300px;
+    height: 400px;
+  }
+  .login{
+    width: 92%;
+    margin-left: 10px;
+    margin-right: 1px;
+    height: auto;
+  }
+}
+

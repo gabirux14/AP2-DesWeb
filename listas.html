@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de JOGADORES</title>
+    <link rel="stylesheet" href="./src/listas.css" />
+  </head>
+  <body>
+    <main>
+      <div id="header">
+        <div>
+          <h2>Atletas Botafogo</h2>
+        </div>
+        <div class="div-btns">
+          <button id="btn-mas" class="btn-tipo" onclick="getLista('masculino')">Masculino</button>
+          <button id="btn-fem" class="btn-tipo" onclick="getLista('feminino')">Feminino</button>
+          <button id="btn-all" class="btn-tipo" onclick="getLista('all')">Elenco Completo</button>
+        </div>
+        <div class="div-select">
+          <select id="select-elenco">
+            <option value="" disabled="">Escolha o elenco</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="all">Elenco Completo</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" id="sair" onclick="sair()">Sair</button>
+        </div>
+      </div>
+      
+      <div id="text">
+          <p >Escolha o elenco que deseja ver</p>
+      </div>
+  
+      <div id="elenco">
+      </div>  
+    </main>
+
+    <script type="text/javascript" src="./src/principal.js"></script>
+    <script type="text/javascript" src="./src/listas.js"></script>
+  </body>
+</html>
