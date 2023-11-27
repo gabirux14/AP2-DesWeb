@@ -13,7 +13,7 @@ function sair() {
 function logar(){
   let senhaUser = document.getElementById('entrada-senha').value;
 
-  if (hex_md5(senhaUser) === "e10adc3949ba59abbe56e057f20f883e") {
+  if (hex_md5(senhaUser) === "30622a5a76d681274b8b33c23192cd8b") {
     window.sessionStorage.setItem("logado", "logado");
     window.location = "listas.html";
   } else {
